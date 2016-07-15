@@ -1,0 +1,16 @@
+﻿@model DemoApplication.Models.PersonViewModel
+
+@{
+	Layout = "~/Views/Shared/Campaign.cshtml";
+}
+
+<h3>Person:</h3>
+
+<div>
+	@Model.FirstName
+</div>
+
+<div>
+	@Html.LabelFor(m => m.LastName)
+	@Html.EditorFor(m => m.LastName)
+</div>
